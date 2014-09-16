@@ -182,7 +182,7 @@ function prettyPhotoBind(){
 		
 		$("#contactForm").submit(function(e){
 			e.preventDefault();
-			dataString = $("#contactForm").serialize();
+			var dataString = $("#contactForm").serialize();
 				$.ajax({
 					type: "POST",
 					url: "mail.php",
